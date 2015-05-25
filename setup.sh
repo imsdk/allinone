@@ -33,7 +33,7 @@ cp -r IMSDK/ nsq/ redis/ mongodb/ sql/ /opt/
 
 #start mysql
 
-mysqlcnt=`ps ax | grep mysqld | grep -v grep | wc -l`
+mysqlcnt=`ps ax | grep [m]ysqld  | wc -l`
 
 if [ $mysqlcnt -gt "0" ]
 then
