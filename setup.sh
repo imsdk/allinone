@@ -30,20 +30,6 @@ curr=`pwd`
 #redis nsq mongodb 
 cp -r IMSDK/ nsq/ redis/ mongodb/ sql/ /opt/
 
-#start redis
-echo "==========install redis=========="
-nohup /opt/redis/redis-server /opt/redis/redis.conf &
-
-#start nsq
-cd /opt/nsq
-echo "==========install nsq=========="
-sh /opt/nsq/restart.sh
-
-
-#start mongodb 
-echo "==========install mongodb=========="
-touch /opt/mongodb/log/shard1a.log
-nohup /opt/mongodb/bin/mongod --port 27017 -oplogSize 100  -logpath /opt/mongodb/log/shard1a.log -dbpath /opt/mongodb/data -logappend -noprealloc -nojournal  &
 
 #start mysql
 
@@ -66,6 +52,24 @@ else
 	echo "init mysql table"
 	/opt/sql/sql.sh
 fi
+
+
+#start redis
+echo "==========install redis=========="
+nohup /opt/redis/redis-server /opt/redis/redis.conf &
+
+#start nsq
+cd /opt/nsq
+echo "==========install nsq=========="
+sh /opt/nsq/restart.sh
+
+
+#start mongodb 
+echo "==========install mongodb=========="
+touch /opt/mongodb/log/shard1a.log
+nohup /opt/mongodb/bin/mongod --port 27017 -oplogSize 100  -logpath /opt/mongodb/log/shard1a.log -dbpath /opt/mongodb/data -logappend -noprealloc -nojournal  &
+
+
 
 
 cd $curr
