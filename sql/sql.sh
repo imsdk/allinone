@@ -10,6 +10,7 @@ ${ex} -u${rootuser} -s -e \
 "
 create database imsdk charset=utf8;
 grant all privileges on imsdk.* to 'imsdk'@'127.0.0.1' identified by 'imsdk';
+grant all privileges on imsdk.* to 'imsdk'@'localhost' identified by 'imsdk';
 "
 
 if [ ! -f ${sqlfile} ];then
