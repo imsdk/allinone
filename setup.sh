@@ -38,7 +38,7 @@ mysqlcnt=`ps ax | grep [m]ysqld  | wc -l`
 if [ $mysqlcnt -gt "0" ]
 then
         echo "您已经安装mysql,请如下操作:"
-        echo "1.创建数据库 imsdk,参照/opt/sql.sh 换成自己mysql的root密码，里面集成正同两个步骤："
+        echo "1.创建数据库 imsdk,参照/opt/sql.sh 换成自己mysql的root密码，里面集成下面两个步骤："
         echo "2.从/opt/sql/imsdk.sql 文件导入数据库表结构:"
         echo "3.imsdk访问权限: grant all privileges on imsdk.* to 'imsdk'@'127.0.0.1' identified by 'imsdk';"
         exit
