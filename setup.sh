@@ -55,6 +55,7 @@ then
         echo "1.创建数据库 imsdk"
         echo "2.从/opt/sql/imsdk.sql 文件导入数据库表结构:"
         echo "3.imsdk访问权限: grant all privileges on imsdk.* to 'imsdk'@'127.0.0.1' identified by 'imsdk';"
+        exit
 else
 	cd $curr
 	echo "==========install mysql=========="
