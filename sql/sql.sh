@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH='$PATH:/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/sbin'
+export PATH=$PATH:'/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/sbin'
 
 ex="mysql --default-character-set=utf8"
 sqlfile="/opt/sql/imsdk.sql"
