@@ -41,6 +41,7 @@ sh /opt/nsq/restart.sh
 
 #start mongodb 
 echo "==========install mongodb=========="
+touch /opt/mongodb/log/shard1a.log
 nohup /opt/mongodb/bin/mongod --port 27017 -oplogSize 100  -logpath /opt/mongodb/log/shard1a.log -dbpath /opt/mongodb/data -logappend -noprealloc -nojournal  &
 
 #start mysql
