@@ -13,5 +13,6 @@
   
 4. IMSDK后台系统单机版安装完成
   可通过 ./checktool   $Appkey 检查安装环境
+
   ./checktool e356440c5421d4db8deeXXXX
 
