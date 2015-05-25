@@ -3,6 +3,7 @@ export PATH='$PATH:/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:
 
 
 #请将脚本中的APPKEY替换成申请的24位appkey
+#change the appkey with yours on www.imsdk.im
 appkey=APPKEY
 
 
