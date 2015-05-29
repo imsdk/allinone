@@ -1,7 +1,7 @@
 # allinone
 ## 安装环境
 1. cpu x86 64位
-2. 内存 >= 4G
+2. 内存 >= 4G（取决于mongodb、mysql系统要求）
 3. CentOS6, RH6 或以上版本
 
 ## 安装步骤如下
