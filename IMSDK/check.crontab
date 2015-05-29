@@ -1,0 +1,1 @@
+*/1 * * * * /opt/IMSDK/check.sh  >/dev/null 
