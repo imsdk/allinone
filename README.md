@@ -20,3 +20,12 @@
 
 2. 参照[IMSDK官方文档](http://docs.imsdk.im)上的快速入门和API接口文档嵌入SDK。
 
+
+# allinone  Android客户端
+
+##配置步骤
+1. IMSDK-android目录下IMSDK-Lib文件夹下，修改res/raw/imsdk_config.properties文件中的配置项。其中，im_domain对应IM通讯域名，im_ip对应默认通讯IP，im_port对应默认通讯端口
+
+2. 参照[IMSDK官方文档](http://docs.imsdk.im)上的快速入门和API接口文档嵌入SDK。
+
+
